@@ -1,0 +1,125 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="4b2f279d-290d-417f-9689-06bd9ace1c58" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Q3_Sales_Cube</ID>
+  <MeasureGroups>
+    <MeasureGroup>
+      <ID>Fact Sales</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="2480190c-187e-4a52-bdd6-27dc66b2e713">
+          <ID>Fact Sales</ID>
+          <Name>Fact Sales</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="ba74db5f-0a4e-4273-bbd4-b4db326d425f">
+            <DataSourceViewID>ITI SSAS DWH Sales Q3</DataSourceViewID>
+            <TableID>dbo_Fact_x0020_Sales</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Fact Sales 1</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="08247950-63d6-41f4-9725-8a2a17754c1b">
+          <ID>Fact Sales</ID>
+          <Name>Fact Sales</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="37e22396-c10b-4ec4-9e4c-863857452e93">
+            <DataSourceViewID>ITI SSAS DWH Sales Q3</DataSourceViewID>
+            <TableID>dbo_Fact_x0020_Sales</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Product Dim</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="b6e4c975-a9f5-438e-bfe7-312801400f11">
+          <ID>Product Dim</ID>
+          <Name>Product Dim</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="6cd72dc6-178c-4719-a5fb-b1e2989913d6">
+            <DataSourceViewID>ITI SSAS DWH Sales Q3</DataSourceViewID>
+            <TableID>dbo_ProductDim</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Channel Dim</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="7ba04fdd-4861-4e94-946f-3d7bbebadc52">
+          <ID>Channel Dim</ID>
+          <Name>Channel Dim</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="76e40d47-3b14-4701-97a2-758fd9806a83">
+            <DataSourceViewID>ITI SSAS DWH Sales Q3</DataSourceViewID>
+            <TableID>dbo_ChannelDim</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Customer Dim</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="213f72dc-51a2-4e22-9e5b-d8ea19b5fe30">
+          <ID>Customer Dim</ID>
+          <Name>Customer Dim</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="4f7a8a2c-075e-4553-b55f-6d68f5b62a30">
+            <DataSourceViewID>ITI SSAS DWH Sales Q3</DataSourceViewID>
+            <TableID>dbo_CustomerDim</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Salesman Dim</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="2f325b2f-2552-4d7c-812e-8f954c5b9828">
+          <ID>Salesman Dim</ID>
+          <Name>Salesman Dim</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="529eb15d-0b71-43a2-bed7-1a099d6684c7">
+            <DataSourceViewID>ITI SSAS DWH Sales Q3</DataSourceViewID>
+            <TableID>dbo_SalesmanDim</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+  </MeasureGroups>
+</Cube>
